@@ -337,7 +337,7 @@ function search () {
 	$(".output").append($("<div/>").addClass("cp-spinner cp-meter"))
 
 	//Realizamos una solicitud json para obtener las estaciones que concuerda con lo escrito en el input
-	$.get("http://api.waqi.info/search/?token=43b146051093d2a179f84802c061870088a7ce91&keyword=" + keyword, function (result) {
+	$.get("https://api.waqi.info/search/?token=43b146051093d2a179f84802c061870088a7ce91&keyword=" + keyword, function (result) {
 
 		$(".output").html("<h2>Resultado:</h2>")
 		if (!result || (result.status != "ok")) {
@@ -366,7 +366,7 @@ function search () {
 			tr.append($("<td>").html(station.time.stime).attr('style', 'text-align:center'))
 			// Una vez que el usuario a seleccionado la estación al hacer click recogeremos todas las imagenes y en archivo html y lo pasaremos a un zip
 			tr.on("click", function () {
-                const url = `http://api.waqi.info/feed/@${station.uid}/?token=43b146051093d2a179f84802c061870088a7ce91`;
+                const url = `https://api.waqi.info/feed/@${station.uid}/?token=43b146051093d2a179f84802c061870088a7ce91`;
                 const routes = ["../images/depgre.jpg", "../images/depred.jpg", "../images/depyel.jpg", 
                 "../images/familygre.jpg", "../images/familyred.jpg", "../images/familyyel.jpg", 
                 "../images/mayoresgre.jpg", "../images/mayoresred.jpg", "../images/mayoresyel.jpg", 
