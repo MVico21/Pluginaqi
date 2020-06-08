@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel ./src --out-dir ./dist --source-maps --copy-files",
     "dev": "nodemon src/index.js --exec babel-node",
     "start": "node dist/index.js"
   },
@@ -26,5 +26,8 @@
   },
   "engines": {
     "node": "12.16.2"
-  }
+  },
+  "files": [
+    "src/*"
+  ]
 }
