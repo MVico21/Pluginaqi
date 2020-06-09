@@ -202,7 +202,7 @@ const renderPlugin = (url) => `
                 <thead>
                     <th colspan="4" >
                         <span data-toggle="modal" data-target="#Modal">
-                            <center><b>AIR QUALITY</b></center>
+                            <center><b>AIR QUALITY*</b></center>
                         </span>
                     </th>
                     <tr>
