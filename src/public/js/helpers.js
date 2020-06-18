@@ -198,7 +198,7 @@ const renderPlugin = (url) => `
                 <thead>
                     <th colspan="4" >
                     <span data-toggle="tooltip" data-html="true"  data-placement="bottom" class="white-tooltip" title="<font color='blue'> Autora: María Vico Martín </font><br><font size=1>GNU General Public License</font>">
-                    <center><b>AIR QUALITY<a href='https://github.com/MVico21/Pluginaqi' target="_blank" >*</a></b></center>
+                        <center><b>AIR QUALITY<a href='https://github.com/MVico21/Pluginaqi' target="_blank" >*</a></b></center>
                     </span>
                     </th>
                     <tr>
