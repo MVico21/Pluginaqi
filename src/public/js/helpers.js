@@ -189,10 +189,6 @@ const renderPlugin = (url) => `
             $('[data-toggle="tooltip"]').tooltip();   
         });
 
-        // Modal
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
         </script>
 
         <br>
@@ -201,15 +197,15 @@ const renderPlugin = (url) => `
             <table class="table table-bordered d" >
                 <thead>
                     <th colspan="4" >
-                        <span data-toggle="modal" data-target="#Modal">
-                            <center><b>AIR QUALITY*</b></center>
-                        </span>
+                    <span data-toggle="tooltip" data-html="true"  data-placement="bottom" class="white-tooltip" title="<font color='blue'> Autora: María Vico Martín </font><br><font size=1>GNU General Public License</font>">
+                    <center><b>AIR QUALITY<a href='https://github.com/MVico21/Pluginaqi' target="_blank" >*</a></b></center>
+                    </span>
                     </th>
                     <tr>
                         <td colspan="4"><div align='center'><img src="images/logo_v2.jpg" width="100%" height="40%" ></div></td>
                     </tr>
                     <tr>
-                        <td colspan="2" id="city" style="text-align: center; padding:20px;"></td>
+                        <td colspan="2" id="city" style="text-align: center; padding-top:20px;"></td>
                         <th colspan="2"> <div id="estado" style="text-align: center; font-size:130%; "> </div> <div id="fecha" style="text-align: center; font-size:95%;"></div> </th>
                     </tr>
                 </thead>
@@ -303,27 +299,6 @@ const renderPlugin = (url) => `
                 </tbody>
             </table>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="ModalLabel">Author</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              María Vico Martín <br/>
-              Codigo: <a href="https://github.com/MVico21/Pluginaqi">GitHub</a> <br/>
-              GNU GENERAL PUBLIC LICENSE
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
     </body>
 </html>     
 `
