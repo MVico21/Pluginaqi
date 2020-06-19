@@ -170,7 +170,7 @@ const renderPlugin = (url) => `
                         document.getElementById("dep").innerHTML = '<img src="images/depgre.jpg" width="100%" height="5%" title="Good time to play sports"/>';
                         document.getElementById("mayores").innerHTML = '<img src="images/mayoresgre.jpg"  width="100%" height="5%" title="Good time for a walk"/>';
                         document.getElementById("family").innerHTML = '<img src="images/familygre.jpg"   width="100%" height="5%" title="Good time to go out"/>';
-                        document.getElementById("respira").innerHTML = '<img src="respiragre.jpg" width="100%" height="5%" title="Good time to enjoy the outdoors"/>';
+                        document.getElementById("respira").innerHTML = '<img src="images/respiragre.jpg" width="100%" height="5%" title="Good time to enjoy the outdoors"/>';
                     } else if (color=='#ffff4d') {
                         document.getElementById("dep").innerHTML = '<img src="images/depyel.jpg" width="100%" height="5%" title="Play sports in green areas"/>';
                         document.getElementById("mayores").innerHTML = '<img src="images/mayoresyel.jpg"  width="100%" height="5%" title="Stroll through green areas"/>';
