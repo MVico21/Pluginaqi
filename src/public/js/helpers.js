@@ -349,7 +349,7 @@ function search () {
 
                 const zip = new JSZip();
                 zip.file("index.html", renderPlugin(url));
-                const folder = zip.folder("images")
+                
                 let count = 0;
                 routes.forEach(route => { 
                     // loading a file and add it in a zip file
@@ -357,7 +357,7 @@ function search () {
                         if(err) {
                             throw err; // or handle the error
                         }
-                        folder.file(route, data, {binary:true});
+                        zip.file(route, data, {binary:true});
                         count++;
                         if (count == routes.length) {
                             // Esta función es la ventana emergente que te saldrá para preguntar si deseas guardad el archivo .zip
